@@ -14,4 +14,10 @@ This is a very simple single page link list page that uses Eleventy to build it.
 * Change the favicon
 * Make any other changes to the layout in src/_includes/layout.njk
 
+## Hosting
+
 I recommend hosting on [Netlify](https://www.netlify.com)
+
+You can deploy to Netlify with one click below. Netlify will walk you through the process of building and deploying your site.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/colinaut/link-list.git)
