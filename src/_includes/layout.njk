@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{title}}</title>
+        <!-- Favicons generated via https://favicon.io/favicon-generator/ -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+        <!-- Sanitize CSS for clean standards -->
+        <link href="https://unpkg.com/sanitize.css" rel="stylesheet" >
+        <link href="https://unpkg.com/sanitize.css/typography.css" rel="stylesheet" >
+        <!-- Google Fonts from https://fonts.google.com -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <!-- Font Family is in styles.css -->
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <main>
+            <figure class="hero"><img src="/images/hero.jpg" alt="main image"></figure>
+            <div class="content-wrapper">
+                <h1 class="page-title">{{title}}</h1>
+                <div class="content">{{ content | safe }}</div>
+            </div>
+        </main>
+    </body>
+</html>
