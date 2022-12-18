@@ -11,6 +11,7 @@
 
     /* CSS Variables */
     --bg-color: #f5f5f5;
+    --hero-bg-color: #663333;
     --text-color: #333333;
     --header-color: #663333;
     --button: #7A17BD;
@@ -37,7 +38,13 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .content-wrapper {
-    padding: 2rem 3rem;;
+    padding: .5rem 2rem;
+}
+
+@media screen and (min-width: 580px) {
+    .content-wrapper {
+        padding: 2rem 3rem;
+    }
 }
 
 .content {
@@ -47,6 +54,16 @@ h1, h2, h3, h4, h5, h6 {
 .hero {
     margin: 0;
     padding: 0;
+    background-color: var(--hero-bg-color);
+    max-height: 50vh;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 580px) {
+    .hero {
+        max-height: none;
+        min-height: 100vh;
+    }
 }
 
 .hero img {
